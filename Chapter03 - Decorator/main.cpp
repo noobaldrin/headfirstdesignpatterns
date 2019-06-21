@@ -7,19 +7,17 @@ int main()
 {
 
     // Declare the base Beverage
-    Beverage* beverage;
-    beverage = new Decaf();
+    Beverage* decaf;
+    decaf = new Decaf();
 
-    // Decorate the base beverage by wrapping with condiment
-    Milk* milk = new Milk(*beverage);
+    // Decorate the base beverage with different condiments
+    decaf = new Milk(*decaf);
+    decaf = new Mocha(*decaf);
+    decaf = new Soy(*decaf);
+    decaf = new Milk(*decaf);
 
-    // Decorate  the wrapped beverage with another condiment
-    Mocha* mocha = new Mocha(*milk);
-    Soy* soy = new Soy(*mocha);
-    Milk* anothermilk = new Milk(*soy);
-
-    // Show the condiment names and total cost
-    std::cout << "Total Cost of: " << anothermilk->getDescription()
-              << " is " << anothermilk->cost() << std::endl;
+    // Display the condiments added and total cost
+    std::cout << "Total Cost of: " << decaf->getDescription()
+              << " is " << decaf->cost() << std::endl;
     return 0;
 }
