@@ -25,8 +25,29 @@ protected:
 class MallardDuck : public Duck
 {
 public:
-	MallardDuck();
-	void display() override;
+    MallardDuck();
+    void display() override;
 };
 
-#endif // DUCK_HPP
+class RedheadDuck : public Duck
+{
+public:
+    RedheadDuck();
+    void display() override;
+};
+
+class RubberDuck : public Duck
+{
+public:
+    RubberDuck();
+    void display() override;
+};
+
+class DecoyDuck : public Duck
+{
+public:
+    DecoyDuck();
+    void display() override;
+};
+
+#endif    // DUCK_HPP
