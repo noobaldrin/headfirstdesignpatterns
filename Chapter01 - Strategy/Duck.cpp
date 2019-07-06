@@ -56,8 +56,8 @@ void RedheadDuck::display()
 
 RubberDuck::RubberDuck()
 {
-    quackBehavior = new Quack();
-    flyBehavior = new FlyWithWings();
+    quackBehavior = new Squeak();
+    flyBehavior = new FlyNoWay();
 }
 
 void RubberDuck::display()
@@ -67,8 +67,8 @@ void RubberDuck::display()
 
 DecoyDuck::DecoyDuck()
 {
-    quackBehavior = new Quack();
-    flyBehavior = new FlyWithWings();
+    quackBehavior = new MuteQuack();
+    flyBehavior = new FlyRocketPowered();
 }
 
 void DecoyDuck::display()
