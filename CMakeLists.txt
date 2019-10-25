@@ -11,6 +11,4 @@ add_subdirectory("Chapter04 - Factory")
 
 option(GUI "Compile gui demos" OFF)
 
-if (GUI)
-	add_subdirectory("gui")
-endif()
+add_subdirectory("gui")
